@@ -15,6 +15,9 @@
 - [x] Tagged GitHub release created.
 - [x] Controlled prototype claims separated from future human-study and production claims.
 - [x] Page count is below the 20-page recommendation.
+- [x] All seven tables use IEEE caption placement, Roman numbering, readable template-compatible text, and in-text callouts.
+- [x] References [1] through [14] are all cited in the manuscript; no cited number is missing from the reference list.
+- [x] The DOI line remains explicitly unassigned rather than presenting a fabricated publication DOI.
 
 ## Author confirmations required in the IEEE portal
 
