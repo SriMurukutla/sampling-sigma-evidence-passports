@@ -1,0 +1,25 @@
+{
+  "name": "sampling-sigma-protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducibility package for the Sampling Sigma cybersecurity evidence-passport prototype",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "evaluate": "python3 tools/research_evaluation.py",
+    "verify": "npm run compile && npm test && npm run evaluate"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "5.0.7",
+    "@openzeppelin/contracts": "5.6.1",
+    "hardhat": "3.21.1",
+    "typescript": "~5.8.0"
+  },
+  "overrides": {
+    "zod": "^4.6.6"
+  }
+}

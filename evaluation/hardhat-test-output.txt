@@ -1,0 +1,35 @@
+
+> sampling-sigma-protocol@0.1.0 test
+> hardhat test
+
+No contracts to compile
+
+Running Solidity tests
+
+
+Running node:test tests
+
+  SamplingSigma
+    ✔ creates the declared fixed initial allocation under the cap
+    ✔ has no post-deployment mint function
+    ✔ rejects a shared administrator and treasury
+    ✔ rejects unauthorized pause operations
+    ✔ blocks transfers while paused and restores them after unpause
+
+  SamplingSigmaAssuranceCore
+    ✔ records complete assurance commitments and independent review
+    ✔ prevents issuer self-review
+    ✔ requires scope limitations identity and review evidence commitments
+    ✔ preserves explicit supersession lineage
+
+  SamplingSigmaResearchCore
+    ✔ records and validates cybersecurity research evidence
+    ✔ rejects submissions from accounts without the research role
+    ✔ does not allow a reviewed record to be silently rewritten
+    ✔ permits explicit supersession of previously validated research
+    ✔ prevents a researcher from validating their own submission
+    ✔ rejects unregistered research domains
+
+
+15 passing (15 nodejs)
+

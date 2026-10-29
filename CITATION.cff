@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it using this metadata."
+title: "Sampling Sigma: Governed Evidence Passports for Cybersecurity Assurance"
+type: software
+version: 0.1.0
+date-released: 2026-10-29
+authors:
+  - family-names: Murukutla
+    given-names: Sri Sai Lakshmi Ganesh
+    orcid: "https://orcid.org/0009-0001-5057-7399"
+    email: murukutlassl@gmail.com
+repository-code: "https://github.com/SriMurukutla/sampling-sigma-evidence-passports"
+license: MIT
+keywords:
+  - cybersecurity assurance
+  - evidence provenance
+  - smart contracts
+  - governance
+  - reproducible research

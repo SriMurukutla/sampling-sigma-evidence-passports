@@ -1,0 +1,47 @@
+{
+  "study_id": "SS-DSR-PROTOTYPE-2026-10-29",
+  "generated_at_utc": "2026-10-29T18:19:27.526944+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.4.1-x86_64-i386-64bit",
+    "machine": "x86_64"
+  },
+  "actual_results": {
+    "tamper_detection": {
+      "cases": 5000,
+      "single_bit_mutations_detected": 5000,
+      "detection_rate_percent": 100.0,
+      "claim_boundary": "Detects byte changes in this controlled corpus; does not prove semantic truth."
+    },
+    "hashing_performance": {
+      "algorithm": "SHA-256",
+      "payload_bytes": 1048576,
+      "rounds": 256,
+      "median_latency_ms": 2.1396,
+      "p95_latency_ms": 2.7037,
+      "throughput_mib_per_second": 449.01
+    },
+    "lifecycle_reference_model": {
+      "state_pairs_exhaustively_checked": 25,
+      "allowed_transitions": 4,
+      "forbidden_transitions_rejected": 21,
+      "forbidden_acceptances": 0,
+      "model_note": "Reference state-machine model; contract behavior is reported separately."
+    },
+    "smart_contract_tests": {
+      "command": "npm test",
+      "exit_code": 0,
+      "passing_tests": 15,
+      "duration_seconds": 3.445,
+      "output_file": "hardhat-test-output.txt"
+    }
+  },
+  "not_measured": [
+    "independent security audit",
+    "field usability",
+    "production availability",
+    "cross-organization interoperability",
+    "legal or regulatory compliance",
+    "economic or token-market outcomes"
+  ]
+}
