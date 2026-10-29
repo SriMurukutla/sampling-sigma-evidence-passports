@@ -18,5 +18,5 @@ Sincerely,
 Sri Sai Lakshmi Ganesh Murukutla
 Murukutla Group LLC
 Austin, Texas, USA
-murukutlassl@gmail.com
+https://murukutlagroup.com/contact
 ORCID 0009-0001-5057-7399

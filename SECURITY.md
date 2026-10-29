@@ -6,7 +6,7 @@ This repository contains an unaudited research prototype. Do not use it to custo
 
 ## Reporting a vulnerability
 
-Please report suspected vulnerabilities privately to `murukutlassl@gmail.com`. Include the affected component, reproduction steps, impact, and any suggested mitigation. Do not include real credentials, personal data, or exploit activity against systems you do not own or have explicit permission to test.
+Please report suspected vulnerabilities through the private inquiry form at https://murukutlagroup.com/contact and select Technology. Include the affected component, reproduction steps, impact, and any suggested mitigation. Do not include real credentials, personal data, or exploit activity against systems you do not own or have explicit permission to test.
 
 ## Disclosure expectations
 

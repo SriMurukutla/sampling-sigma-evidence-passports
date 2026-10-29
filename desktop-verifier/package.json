@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Privacy-first desktop demonstration of Sampling Sigma evidence passports.",
   "main": "src/main.cjs",
-  "author": "Murukutla Group LLC <murukutlassl@gmail.com>",
+  "author": "Murukutla Group LLC",
   "license": "MIT",
   "scripts": {
     "start": "electron .",

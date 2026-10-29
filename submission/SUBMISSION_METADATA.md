@@ -6,7 +6,7 @@
 - Manuscript type: Research Article
 - Corresponding author: Sri Sai Lakshmi Ganesh Murukutla
 - Affiliation: Murukutla Group LLC, Austin, Texas, USA
-- Email: murukutlassl@gmail.com
+- Contact: https://murukutlagroup.com/contact
 - ORCID: https://orcid.org/0009-0001-5057-7399
 - Funding: This research received no external funding.
 - Code and data: https://github.com/SriMurukutla/sampling-sigma-evidence-passports

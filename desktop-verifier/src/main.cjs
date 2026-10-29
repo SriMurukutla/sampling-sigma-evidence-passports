@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const trial = require('./trial.cjs');
 
-const CONTACT = 'murukutlassl@gmail.com';
+const CONTACT = 'https://murukutlagroup.com/contact?source=sampling-sigma-verifier';
 let mainWindow;
 
 function stateFile() { return path.join(app.getPath('userData'), 'license-state.json'); }
@@ -47,7 +47,7 @@ function createWindow() {
 
 ipcMain.handle('trial:state', () => publicState());
 ipcMain.handle('passport:verify', () => chooseAndVerify());
-ipcMain.handle('license:contact', () => shell.openExternal(`mailto:${CONTACT}?subject=${encodeURIComponent('Sampling Sigma license or subscription request')}`));
+ipcMain.handle('license:contact', () => shell.openExternal(CONTACT));
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit(); });
 app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });

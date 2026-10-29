@@ -8,7 +8,7 @@ A macOS and Windows demonstration application for creating a local, scope-bound 
 - The document is processed locally and is not uploaded.
 - The application records the filename, byte size, SHA-256 commitment, scope, limitations, and generation time.
 - Two completed evaluation runs are permitted per registered device before licensing is requested.
-- The licensing button opens an email addressed to `murukutlassl@gmail.com`.
+- The licensing button opens the Murukutla Group contact form without displaying a private email address.
 
 ## Privacy and licensing boundary
 
