@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sampling Sigma Verifier</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="mark">Σ</div><div><p class="eyebrow">SAMPLING SIGMA</p><h1>Evidence Passport Verifier</h1><p class="lede">Create a local, privacy-preserving integrity record for a document—without uploading the document.</p></div></header>
+    <section class="status" aria-live="polite">
+      <div><span>Evaluation runs</span><strong id="runs">Checking…</strong></div>
+      <div><span>Privacy</span><strong>Local processing</strong></div>
+      <div><span>Device registration</span><strong id="device">Checking…</strong></div>
+    </section>
+    <section class="workbench">
+      <div class="dropzone"><div class="file-icon">DOC</div><h2>Choose a document</h2><p>The application calculates a SHA-256 commitment and produces a scoped demonstration passport.</p><button id="verify">Select and verify document</button><button class="secondary" id="license" hidden>Request a license or subscription</button></div>
+      <article class="result" id="result"><p class="empty">Your passport result will appear here.</p></article>
+    </section>
+    <footer><strong>Important:</strong> A matching digest demonstrates byte equality only. It does not prove that a document is true, safe, complete, authorized, or independently reviewed.</footer>
+  </main><script src="renderer.js"></script>
+</body></html>

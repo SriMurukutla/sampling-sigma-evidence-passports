@@ -1,0 +1,27 @@
+{
+  "name": "sampling-sigma-desktop-verifier",
+  "version": "0.1.0",
+  "description": "Privacy-first desktop demonstration of Sampling Sigma evidence passports.",
+  "main": "src/main.cjs",
+  "author": "Murukutla Group LLC <murukutlassl@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "build:mac": "electron-builder --mac dmg zip",
+    "build:win": "electron-builder --win nsis zip"
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.murukutlagroup.samplingsigma.verifier",
+    "productName": "Sampling Sigma Verifier",
+    "files": ["src/**/*", "package.json", "README.md"],
+    "directories": { "output": "dist" },
+    "mac": { "category": "public.app-category.developer-tools", "target": ["dmg", "zip"] },
+    "win": { "target": ["nsis", "zip"] },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}

@@ -1,0 +1,51 @@
+name: Build desktop verifier
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "desktop-v*"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: desktop-verifier
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: desktop-verifier/package-lock.json
+      - run: npm ci
+      - run: npm test
+
+  build:
+    needs: test
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: desktop-verifier
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: desktop-verifier/package-lock.json
+      - run: npm ci
+      - run: npm run ${{ runner.os == 'macOS' && 'build:mac' || 'build:win' }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sampling-sigma-verifier-${{ runner.os }}
+          path: desktop-verifier/dist/*
+          if-no-files-found: error
+          retention-days: 14
